@@ -47,10 +47,14 @@ en:
     edit: "Edit"
     show: "Show"
     delete: "Delete"
-    new_flag: "Add new flag"
+    flags: "Add new flag"
     new_region: "Add new region"
     back: "Back"
     update: "Update"
-   
+    language: "Language"
+    portuguese: "Portuguese"
+    english: "English"
+    flags: "Flags"
+    regions: "Regions"
 
   

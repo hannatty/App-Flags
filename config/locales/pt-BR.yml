@@ -18,6 +18,10 @@
     new_region: "Adicionar nova região"
     back: "Voltar"
     update: "Atualizar"
-  
+    language: "Idioma"
+    portuguese: "Português"
+    english: "Inglês"
+    flags: "Bandeiras"
+    regions: "Regiões"
     
     
