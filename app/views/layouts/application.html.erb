@@ -13,17 +13,35 @@
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="https://cdn-icons.flaticon.com/png/512/4450/premium/4450325.png?token=exp=1639071110~hmac=df5ed94d89675305cbe60bafee4f4494" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        App Flags
+      </a>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <%= link_to t('links.flags'), flags_path, class:"nav-link"%>
+          </li>
+          <li class="nav-item">
+            <%= link_to t('links.regions'), regions_path, class:"nav-link"%>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <%=t('links.language') %> </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><%= link_to t('links.english'), root_path(locale: 'en'), class:"nav-link" %> </li>
+              <li><%= link_to t('links.portuguese'), root_path(locale:'pt-BR'), class:"nav-link" %></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+</header>
 
   <body>
     <div class="container-fluid">
-    <ul class="nav justify-content-end">
-        <li class="nav-item">
-          <%= link_to 'Português', root_path(locale:'pt-BR'), class:"nav-link" %>
-        </li>
-        <li class="nav-item">
-          <%= link_to 'English', root_path(locale: 'en'), class:"nav-link" %> 
-        </li>
-    </ul>
+  
       <%= yield %>
     </div>
     
