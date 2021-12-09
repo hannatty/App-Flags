@@ -30,4 +30,27 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  abc: "HeLLO World"
+  current_locale: "English (International)"
+  welcome: "Welcome"
+  menu_message: "You are on App Flags! An application that allows you to create, store and visualize the flags of Brazilian states."
+  delete_confirmation: "Are you sure you want to delete?"
+  flags_button: "Register Flag"
+  regions_button: "Register Region"
+  edit_title_flag: "Editing Flag"
+  new_title_flag: "Nova Flag"
+  edit_title_region: "Editing Region"
+  new_title_region: "New Region"
+  new_title_flag: "New Flag"
+
+  links:
+    edit: "Edit"
+    show: "Show"
+    delete: "Delete"
+    new_flag: "Add new flag"
+    new_region: "Add new region"
+    back: "Back"
+    update: "Update"
+   
+
+  

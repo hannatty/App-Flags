@@ -1,0 +1,6 @@
+<h1><%= t('edit_title_flag') %></h1>
+
+<%= render 'form', flag: @flag %> <br>
+
+<%= link_to t('links.show'), @flag, class:"btn btn-outline-secondary"%>  | 
+<%= link_to t('links.back'), flags_path, class:"btn btn-outline-secondary" %>

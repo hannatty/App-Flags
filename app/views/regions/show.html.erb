@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<form>
+  <div class="mb-3">
+    <%= label_tag nil, @region.class.human_attribute_name(:region_name) %>
+    <%= text_field_tag nil, @region.region_name , class:"form-control", disabled: true  %>
+  </div>
+
+  <div class="mb-3">
+    <%= label_tag nil, @region.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, @region.acronym , class:"form-control", disabled: true  %>
+  </div>
+
+  </form>
+
+
+<%= link_to t('links.edit'), edit_region_path, class:"btn btn-primary"%>
+<br><br>
+<%= link_to t('links.back'), regions_path, class:"btn btn-outline-secondary"%>

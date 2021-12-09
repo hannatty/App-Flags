@@ -1,0 +1,23 @@
+"pt-BR":
+  current_locale: "Português do Brasil"
+  welcome: "Bem Vinda(o)!"
+  menu_message: "Você está na App Flags! Um aplicativo que te permite criar, armazenar e vizualizar as bandeiras dos estados brasileiros."
+  delete_confirmation: "Tem certeza que deseja apagar?"
+  flags_button: "Adicionar bandeira"
+  regions_button: "Adicionar região"
+  edit_title_flag: "Editando bandeira"
+  new_title_flag: "Nova Bandeira"
+  edit_title_region: "Editando região"
+  new_title_region: "Nova Região"
+
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    new_flag: "Adicionar nova bandeira"
+    new_region: "Adicionar nova região"
+    back: "Voltar"
+    update: "Atualizar"
+  
+    
+    

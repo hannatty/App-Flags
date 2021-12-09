@@ -1,0 +1,26 @@
+en:
+  activerecord:
+    models:
+      flag:
+        one: "Flag"
+        other: "Flags"
+      region: 
+        one: "Region"
+        other: "Regions"
+    attributes:
+      flag:
+        state: "State"
+        acronym: "Acronym"
+        capital: "Capital"
+        url_img: "Url Image"
+        region: "Region"
+        region_id: "Region ID"
+        updated_at: "Update at"
+        created_at: "Created at"
+        select: "Select"
+      region:
+        id: "id"
+        region_name: "Region"
+        acronym: "Acronym"
+        updated_at: "Update at"
+        created_at: "Created at"

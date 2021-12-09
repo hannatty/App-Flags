@@ -1,0 +1,33 @@
+<%= form_with(model: flag, local: true) do |form| %>
+
+  <div class="mb-3" >
+    <%= Flag.human_attribute_name(:state) %>
+    <%= form.text_field :state , class:"form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= Flag.human_attribute_name(:acronym) %>
+    <%= form.text_field :acronym , class:"form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= Flag.human_attribute_name(:capital) %>
+    <%= form.text_field :capital , class:"form-control" %>
+  </div>
+
+  <div class="mb-3">
+    <%= Flag.human_attribute_name(:url_img) %>
+    <%= form.text_field :url_img , class:"form-control" %>
+  </div>
+
+  <div class="mb-3">
+  <%= Region.human_attribute_name(:region_name)%>
+  <%= form.select("region_id", @set_region_options, {include_blank: t('select')} , class:"form-control") %>
+  </div>
+  <br>
+
+  <div class="actions">
+    <%= form.submit t('links.update'), class:"btn btn-primary"%>
+  </div>
+  <br>
+<% end %>

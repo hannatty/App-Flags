@@ -1,0 +1,28 @@
+'pt-BR':
+  activerecord:
+    models:
+      flag:
+        one: "Bandeira"
+        other: "Bandeiras"
+      region: 
+        one: "Região"
+        other: "Regiões"
+    attributes:
+      flag:
+        state: "Estado"
+        acronym: "Sigla"
+        capital: "Capital"
+        url_img: "Url da imagem"
+        region: "Região"
+        region_id: "ID da região"
+        updated_at: "Atualizado em"
+        created_at: "Criado em"
+        select: "Selecione"
+      region:
+        id: "Código"
+        region_name: "Região"
+        acronym: "Sigla"
+        updated_at: "Atualizado em"
+        created_at: "Criado em"
+
+  

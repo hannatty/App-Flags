@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1><%= Region.model_name.human(count: @regions.count) %></h1>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th><%= @regions.human_attribute_name(:region_name) %> </th>
+      <th><%= @regions.human_attribute_name(:acronym) %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @regions.each do |region| %>
+      <tr>
+        <td><%= region.region_name %></td>
+        <td><%= region.acronym %></td>
+        <td><%= link_to t('links.show'), region %></td>
+        <td><%= link_to t('links.edit'), edit_region_path(region) %></td>
+        <td><%= link_to t('links.delete'), region, method: :delete, data: { confirm: t('delete_confirmation') } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<br>
+
+<%= link_to t('links.new_region'), new_region_path, class:"btn btn-primary"%>
+<br><br>
+<%= link_to t('links.back'), welcome_index_path, class:"btn btn-outline-secondary" %> 

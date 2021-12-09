@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+
+<form>  
+  <div class="form-group" >
+    <%= label_tag nil, @flag.class.human_attribute_name(:state) %>
+    <%= text_field_tag nil, @flag.state, class:"form-control", placeholder:"Pernambuco", disabled: true %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= label_tag nil, @flag.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, @flag.acronym, class:"form-control", disabled: true%>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= label_tag nil, @flag.class.human_attribute_name(:capital) %>
+    <%= text_field_tag nil, @flag.capital, class:"form-control", disabled: true %>
+  </div>
+  <br>
+
+  <div class="form-group">
+    <%= label_tag nil, @flag.class.human_attribute_name(:url_img) %>
+    <%= text_field_tag nil, @flag.url_img, class:"form-control", disabled: true %>
+  </div>
+  <br>
+
+  <div class="form-group">
+  <%= label_tag nil, @flag.class.human_attribute_name(:region) %>
+  <%= text_field_tag nil, @flag.region.region_name, class:"form-control", disabled: true %>
+  </div>
+
+</form>
+<br>
+
+<%= link_to t('links.edit'), edit_flag_path, class:"btn btn-primary"%>
+<br><br>
+<%= link_to t('links.back'), flags_path, class:"btn btn-outline-secondary"%>
