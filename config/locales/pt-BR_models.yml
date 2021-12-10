@@ -24,5 +24,7 @@
         acronym: "Sigla"
         updated_at: "Atualizado em"
         created_at: "Criado em"
+        footer1: "Termos de Uso  |  Política de Privacidade"
+        footer2: "Info  |  Contato"
 
   

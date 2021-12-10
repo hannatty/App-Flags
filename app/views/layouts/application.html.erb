@@ -4,6 +4,9 @@
     <title>App Flags</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" rel="stylesheet">
 
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
@@ -13,11 +16,12 @@
     <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
+<body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img src="https://cdn-icons.flaticon.com/png/512/4450/premium/4450325.png?token=exp=1639071110~hmac=df5ed94d89675305cbe60bafee4f4494" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="https://cdn-icons.flaticon.com/png/512/1916/premium/1916817.png?token=exp=1639137254~hmac=03a852791c03ef3ab22219b4c9c3eebc" alt="" width="30" height="24" class="d-inline-block align-text-top">
         App Flags
       </a>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -37,13 +41,21 @@
           </li>
         </div>
       </div>
-</header>
+  </header>
 
-  <body>
-    <div class="container-fluid">
-  
-      <%= yield %>
-    </div>
+  <div class="container-fluid">
+    <%= yield %>
+  </div>
+
+  <footer id="main-footer">
+    <p class="p-footer"> <%= t("links.footer1")%> </p>
+    <p class="p2-footer">  <%= t("links.footer2") %> </p>
+    <img id="img-footer" src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" alt="logo.whatsApp" width="25" height="25" class="d-inline-block align-text-top">
+
+    
+    
+
+ </footer>
     
   </body>
 </html>
