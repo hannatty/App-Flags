@@ -10,10 +10,10 @@
 
     <%= stylesheet_link_tag  'application', media: 'all', 'data-turbolinks-track': 'reload' %>
 
-    <%= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%#= stylesheet_link_tag params[:controller], media: 'all', 'data-turbolinks-track': 'reload' %>
     
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
+    <%#= javascript_include_tag params[:controller], 'data-turbolinks-track': 'reload' %>
   </head>
 
 <body>
@@ -51,10 +51,6 @@
     <p class="p-footer"> <%= t("links.footer1")%> </p>
     <p class="p2-footer">  <%= t("links.footer2") %> </p>
     <img id="img-footer" src="https://cdn-icons-png.flaticon.com/512/1383/1383269.png" alt="logo.whatsApp" width="25" height="25" class="d-inline-block align-text-top">
-
-    
-    
-
  </footer>
     
   </body>

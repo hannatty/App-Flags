@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :admins
   resources :regions
   get 'welcome/index'
   resources :flags

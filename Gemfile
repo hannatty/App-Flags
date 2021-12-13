@@ -34,6 +34,9 @@ gem 'pry', '~> 0.13.1'
 #i18n
 gem 'rails-i18n', '~> 5.1'
 
+#Devise
+gem 'devise'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
