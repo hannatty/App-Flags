@@ -14,31 +14,29 @@
  *= require_self
  *= require bootstrap/dist/css/bootstrap
  */
- 
- #main-footer{
-   background-color: #A3CEEF;
-   height: 150px;
-   margin-top: 20px;
- }
 
- .p-footer{
+#main-footer {
+  background-color: #a3ceef;
+  height: 150px;
+  margin-top: 210px;
+}
+
+.p-footer {
   position: relative;
   text-align: center;
   padding-top: 40px;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 15px;
   color: #ffffff;
- }
+}
 
- .p2-footer{
+.p2-footer {
   text-align: center;
-  font-family: 'Open Sans Condensed', sans-serif;
+  font-family: "Open Sans Condensed", sans-serif;
   font-size: 15px;
   color: #ffffff;
+}
 
- }
-
- #img-footer{
-   margin-left: 630px;
-
- }
+#img-footer {
+  margin-left: 630px;
+}

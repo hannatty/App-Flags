@@ -37,6 +37,9 @@ gem 'rails-i18n', '~> 5.1'
 #Devise
 gem 'devise'
 
+#pg_search
+gem 'pg_search'
+
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'

@@ -15,3 +15,6 @@ services:
       - "3000:3000"
     depends_on:
       - db
+    container_name: "web" # Criar alias para debuggar usando o pry
+    tty: true # Debuggar usando o pry
+    stdin_open: true # Debuggar usando o pry
